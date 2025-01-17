@@ -30,6 +30,16 @@ class SubCategory(models.Model):
     def __str__(self):
         return self.name
 
+
+class Sliders(models.Model):
+    main_slider = models.ImageField(upload_to="uploads/%Y/%m/", blank=True, null=True, verbose_name='فایل تصویر')
+    slider1 = models.ImageField(upload_to="uploads/%Y/%m/", blank=True, null=True, verbose_name='فایل تصویر')
+    slider2 = models.ImageField(upload_to="uploads/%Y/%m/", blank=True, null=True, verbose_name='فایل تصویر')
+    slider3 = models.ImageField(upload_to="uploads/%Y/%m/", blank=True, null=True, verbose_name='فایل تصویر')
+    slider4 = models.ImageField(upload_to="uploads/%Y/%m/", blank=True, null=True, verbose_name='فایل تصویر')
+    slider5 = models.ImageField(upload_to="uploads/%Y/%m/", blank=True, null=True, verbose_name='فایل تصویر')
+
+
 class Color(models.Model):
     name = models.CharField(max_length=50)
     hex_code = models.CharField(max_length=7)
