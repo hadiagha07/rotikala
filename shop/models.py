@@ -104,3 +104,12 @@ class Image(models.Model):
 class Size(models.Model):
     size = models.IntegerField(verbose_name='سایز کفش')
 
+
+
+
+
+
+
+
+
+
